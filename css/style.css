@@ -1,0 +1,91 @@
+/* Tekstkleur zwart (#000000) */
+body {
+    color: #000000;
+  }
+  
+ /* Achtergrondkleur wit (#FFFFFF) */
+body {
+    background-color: #FFFF !important;
+  }
+  
+  
+  /* kleur van de balk donkerblauw (#0801E0) */
+  .element1 {
+    background-color: #0801E0;
+  }
+  
+  /* Achtergrondkleur lichtblauw (#149FE0) */
+  .element2 {
+    background-color: #149FE0;
+  }
+  
+  /* Achtergrondkleur turkoois (#14E0C0) */
+  .element4 {
+    background-color: #14E0C0;
+  }
+  
+  nav {
+    background-color: #0000FF;
+}
+/* Achtergrondkleur wit (#FFFFFF) */
+body {
+    background-color: #FFFFFF !important;
+  }
+  
+  .blue-bar {
+    height: 80px; /* Hoogte van de balk - pas naar wens aan */
+    background-color: #0801E0; /* Kies je gewenste kleur */
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%; /* Volledige breedte van het scherm */
+  }
+  .search-form {
+    margin-left: auto;
+    margin-right: 10px; /* Ruimte tussen zoekbalk en login-link */
+  }
+  
+  .search-form input[type="search"] {
+    width: 200px; /* Aanpassen naar wens */
+  }
+  
+  .login-link {
+    color: white; /* Tekstkleur van de login-link */
+    text-decoration: none; /* Geen onderstreping van de link */
+  }
+  
+  /* Stijl voor de hoofdpagina */
+  .main-content {
+    background-color: #FFFFFF; /* Achtergrondkleur wit */
+  }
+  
+  /* Stijl voor de footer */
+  footer {
+    border-top: 1px solid #ccc; /* Verticale lijn bovenaan de footer */
+  }
+  
+  .shop-section {
+    background-color: white; /* Achtergrondkleur van de shop sectie */
+    color: black; /* Tekstkleur van de shop sectie */
+  }
+  
+  /* Achtergrondkleur wit voor oplossingen */
+  .oplossingen {
+    background-color: #FFFFFF; /* Achtergrondkleur wit */
+  }
+  
+  /* Eigen CSS-stijlen */
+
+/* Eventuele andere stijlen die niet in style.css worden verplaatst, kunnen hier blijven */
+.form-label span {
+  color: red;
+}
+
+/* CSS voor rode tekst */
+.tekstlogin {
+    color: red;
+  }
+  
+  .uppercase-text {
+    text-transform: uppercase;
+}

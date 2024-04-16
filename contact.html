@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steven WIFI</title>
+  <!-- reset jouw css -->
+  <link href="./css/reset.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- eigen geschreven css voor jouw html-bestand -->
+  <link href="./css/style.css" rel="stylesheet">
+  <!-- eigen CSS-stijlen -->
+  <style>
+    /* Eventuele andere stijlen die niet in style.css worden verplaatst, kunnen hier blijven */
+  </style>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example">
+  <nav class="blue-bar">
+    <!-- Logo -->
+    <img src="./assets/logo.png" alt="Logo" height="50">
+    <!-- Zoekformulier -->
+    <form class="d-flex search-form" role="search">
+      <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
+      <button class="btn btn-sm btn-outline-secondary" type="submit">zoeken</button>
+    </form>
+    <!-- Login link -->
+    <a href="login.html" class="login-link">Login</a>
+  </nav>
+
+  <section class="row">
+    <!-- Navigatiekolom -->
+    <nav class="col-md-2 bg-light">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="shop.html">Shop</a>     
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="accessoires.html">Accessoires</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="movies.html">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <!-- Nieuwe lijstitem voor Dashboard -->
+        <li class="nav-item">
+          <a class="nav-link" href="dashboard.html">Dashboard</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Inhoudskolom -->
+    <main class="col-md-10 main-content">
+      <header class="m-5">
+        <section class="container">
+          <div class="row">
+            <main class="col-md-9 pe-3">
+              <section id="contact" class="row">
+                <section class="col-12 mb-3">
+                  <h2 class="text-uppercase fs-4 fw-bolder pt-3">Contact</h2>
+                  <p>Vul het registratieformulier in. Velden met een * zijn verplicht.</p>
+                </section>
+                <hr>
+                
+                <form action="#" method="post">
+                  <fieldset class="row g-3 mb-3">
+                    <legend class="text-uppercase fs-6 fw-bolder pt-3">Gegevens</legend>
+                    <section class="col-md-6">
+                      <label for="firstName" class="form-label">Voornaam <span>*</span></label>
+                      <input type="text" class="form-control" id="firstName" required>
+                    </section>
+                    <section class="col-md-6">
+                      <label for="lastName" class="form-label">Achternaam <span>*</span></label>
+                      <input type="text" class="form-control" id="lastName" required>
+                    </section>
+                    <section class="col-6">
+                      <label for="mobile" class="form-label">Mobiel</label>
+                      <input type="tel" class="form-control" id="mobile" placeholder="0412 34 56 78">
+                    </section>
+                    <section class="col-6">
+                      <label for="birthDate" class="form-label">Geboortedatum</label>
+                      <input type="date" class="form-control" id="birthDate">
+                    </section>
+                  </fieldset>
+      
+                  <fieldset class="row g-3 mb-3 mt-3">
+                    <legend class="text-uppercase fs-6 fw-bolder pt-3">Accountgegevens</legend>
+                    <section class="col-12">
+                      <label for="mail" class="form-label">E-mail <span>*</span></label>
+                      <input type="email" class="form-control" id="mail" required>
+                    </section>
+                    <section class="col-md-6">
+                      <label for="password1" class="form-label">Paswoord <span>*</span></label>
+                      <input type="password" class="form-control" id="password1"
+                        placeholder="min 8 karakters, 1 cijfer, 1 hoofdletter" required>
+                    </section>
+                    <section class="col-md-6">
+                      <label for="password2" class="form-label">Bevestig paswoord <span>*</span></label>
+                      <input type="password" class="form-control" id="password2" required>
+                    </section>
+                  </fieldset>
+      
+                  <fieldset class="row g-3 mb-3 mt-3">
+                    <legend class="text-uppercase fs-6 fw-bolder pt-3">Adresgegevens</legend>
+                    <section class="col-12">
+                      <label for="address" class="form-label">Adres <span>*</span></label>
+                      <input type="text" class="form-control" id="address" required>
+                    </section>
+                    <section class="col-6 col-md-3">
+                      <label for="postalcode" class="form-label">Postcode <span>*</span></label>
+                      <input type="text" class="form-control" id="postalcode" required>
+                    </section>
+                    <section class="col-6 col-md-5">
+                      <label for="city" class="form-label">Stad <span>*</span></label>
+                      <input type="text" class="form-control" id="city" required>
+                    </section>
+                    <section class="col-md-4">
+                      <label for="countryCode" class="form-label">Kies een land <span>*</span></label>
+                      <select id="countryCode" class="form-select">
+                        <option value="BE" selected>België</option>
+                        <option value="DE">Duitsland</option>
+                        <option value="FR">Frankrijk</option>
+                        <option value="LU">Luxemburg</option>
+                        <option value="NL">Nederland</option>
+                        <option value="UK">Verenigd Koninkrijk</option>
+                      </select>
+                    </section>
+                  </fieldset>
+                  
+                  <fieldset class="row g-3 mb-3 mt-3">
+                    <legend class="text-uppercase fs-6 fw-bolder pt-3">Accessoires</legend>
+                    <section class="col-6">
+                      <label for="WIFI" class="form-label">Ik koop</label>
+                      <select id="WIFI" class="form-select">
+                        <option value="Access" selected>Access Point</option>
+                        <option value="Mesh">Mesh Oplossingen</option>
+                        <option value="Control">Controllers</option>
+                        <option value="Repeater">Repeaters</option>
+                        <option value="Stroom">Stroomadapters</option>
+                        <option value="Repeater">Repeater</option>
+                      </select>
+                    </section>
+                    <section class="col-6">
+                      <label for="brand" class="form-label">En ben fan van het merk</label>
+                      <select id="brand" class="form-select">
+                        <option value="Cisco" selected>Cisco</option>
+                        <option value="HP">HP</option>
+                        <option value="Dell">Dell</option>
+                        <option value="TP-link">TP-link</option>
+                        <option value="Netgear">Netgear</option>
+                      </select>
+                    </section>
+                    <section class="col">
+                      <label for="satisfied" class="form-label">Hoe tevreden ben je van ons?</label>
+                      <input type="range" class="form-range" min="0" max="10" step="1" id="satisfied">
+                    </section>
+                  </fieldset>
+                  <section class="col-12">
+                    <button type="submit" class="btn btn-primary">Verzenden</button>
+                  </section>
+                </form>
+      
+              </section>
+              <hr>
+            </main>
+      
+            <aside class="col-md-3 border-start ps-5">
+              <h2 class="text-uppercase fs-4 fw-bolder pt-3">Contact</h2>
+              <p>Stevens WIFI<br>
+                Email <a href="mailto:mail@ap.be">steven@ap.be</a><br>
+                Phone +32 123 / 45 67 89</p>
+              <ul class="list-inline socials">
+                <li class="list-inline-item">
+                  <a href="https://www.youtube.com" target="_blank">
+                    <i class="bi bi-youtube element4 fs-3"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.instagram.com" target="_blank">
+                    <i class="bi bi-instagram element4 fs-3"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com" target="_blank">
+                    <i class="bi bi-facebook element4 fs-3"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://twitter.com/" target="_blank">
+                    <i class="bi bi-twitter element4 fs-3"></i>
+                  </a>
+                </li>
+              </ul>
+            </aside>
+      
+          </div>
+        </section>
+      </header>
+    </main>
+    <!-- Footer -->
+    <footer class="container-fluid text-start h6 small p-4">&copy; 2024 Stevens WIFI</footer>
+  </section>
+</body>
+
+</html>
