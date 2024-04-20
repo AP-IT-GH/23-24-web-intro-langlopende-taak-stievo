@@ -1,131 +1,255 @@
 <!DOCTYPE html>
 <html lang="nl-BE">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Steven WIFI</title>
-  <!-- reset jouw css -->
-  <link href="./css/reset.css" rel="stylesheet">
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <!-- eigen geschreven css voor jouw html-bestand -->
-  <link href="./css/style.css" rel="stylesheet">
-  <!-- eigen CSS-stijlen -->
-  <style>
-    
-  </style>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop Stevens WIFI</title>
+    <!-- reset jouw css -->
+    <link href="./css/reset.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- JavaScript: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <!-- eigen geschreven css voor jouw html-bestand -->
+    <link href="./css/style.css" rel="stylesheet">
+  </head>
 
 <body class="p-3 m-0 border-0 bd-example">
-  <nav class="blue-bar">
-    <!-- Logo -->
-    <img src="./assets/logo.png" alt="Logo" height="50">
-    <!-- Zoekformulier -->
-    <form class="d-flex search-form" role="search">
-      <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
-      <button class="btn btn-sm btn-outline-secondary" type="submit">zoeken</button>
-    </form>
-    <!-- Login link -->
-    <a href="login.html" class="login-link">Login</a>
+  <nav class="navbar navbar-expand-md bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./assets/logo.png" alt="stevenswifi" width="160" height="100">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">shop</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              frequenties
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="frequenties24.html">frequenties 2.4 Ghz</a></li>
+              <li><a class="dropdown-item" href="frequenties50.html">frequenties 5.0 Ghz</a></li>
+              <li><a class="dropdown-item" href="frequenties2450.html">frequenties 2.4, 5.0 Ghz</a></li>
+            </ul>
+          </li>
+           <li class="nav-item">
+              <a class="nav-link" href="contact.html">contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="diensten.html">diensten</a>
+            </li>
+            <li class="nav-item">
+              <li class="nav-item">
+                <a class="nav-link" href="movies.html">movies</a>
+              </li>
+              <li class="nav-item">
+                <li class="nav-item">
+                  <button onclick="location.href='login.html'" class="btn btn-primary">Login</button>
+                </li>
+              </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
+          <button class="btn btn-sm btn-outline-secondary" type="submit">zoeken</button>
+        </form>
+      </div>
+    </div>
   </nav>
 
-  <section class="row">
-    <!-- Navigatiekolom -->
-    <nav class="col-md-2 bg-light">
-      <ul class="nav flex-column">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="shop.html">Shop</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="accesoires.html">Accessoires</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="movies.html">Movies</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-        <!-- Nieuwe lijstitem voor Dashboard -->
-        <li class="nav-item">
-          <a class="nav-link" href="dashboard.html">Dashboard</a>
-        </li>
-      </ul>
-    </nav>
+  <header class="row m-5">
+    <h1 class="col display-2 zwart text-center">Oplossingen voor je wifi....</h1>
+  </header>
 
-    <!-- Inhoudskolom -->
+  <div class="container">
+    <div class="row">
+      <main class="col-md-9 pe-3">
+        <section id="shopintro" class="row">
+          <article class="col-12 mb-3">
+            <h2 class="text-uppercase fs-4 fw-bolder pt-3">oorzaken</h2>
+            <p><span style="color: turquoise; font-size: larger;">V</span>an welke materialen is uw huis gebouwd
+              huis. Internetten zonder wifi valt nauwelijks nog voor te stellen. Een draadloos netwerk biedt veel
+              gebruikscomfort, althans zolang het lekker loopt. Maar soms kost het je ook wel hoofdbrekens,
+              bijvoorbeeld als je het netwerk wilt uitbreiden om een beter bereik te krijgen of als blijkt dat je
+              wifi-signaal geregeld dienst weigert. Wij geven je een aantal oplossingen voor al je wifi-problemen.</p>
+
+          </article>
+          <hr>
+
+          <article class="shop-item col-12 col-sm-6 col-md-4">
+            <h2 class="text-uppercase fs-6 fw-bolder pt-3 text-center">huis situatie 1</h2>           
+            <a href="#" rel="noopener">
+              <figure>
+                <img src="./assets/huis1.png" class="img-fluid" alt="foto van huis1"
+                  title="huis1">
+                <figcaption class="h6 small mt-2 turqoise text-center">Fig.1 huis situatie 1</figcaption>
+              </figure>
+            </a>
+          </article>
+          <article class="shop-item col-12 col-sm-6 col-md-4">
+            <h2 class="text-uppercase fs-6 fw-bolder pt-3 text-center ">huis situatie 2</h2>
+             <a href="#" rel="noopener">
+              <figure>
+                <img src="./assets/huis2.png" class="img-fluid" alt="foto van huis2"
+                  title="huis2">
+                  <figcaption class="h6 small mt-2 turqoise text-center">Fig.2 huis situatie 2</figcaption>
+              </figure>
+            </a>
+          </article>
+          <article class="shop-item col-12 col-sm-6 col-md-4">
+            <h2 class="text-uppercase fs-6 fw-bolder pt-3 text-center">command line</h2>
+             <a href="#" rel="noopener">
+              <figure><img src="./assets/commandline1.png" class="img-fluid" alt="foto van commandline"
+                  title="commandline">
+                  <figcaption class="h6 small mt-2 turqoise text-center">Fig.3 Command line</figcaption>
+              </figure>
+            </a>
+          </article>
+          <article class="shop-item col-12 col-sm-6 col-md-4">
+            <h2 class="text-uppercase fs-6 fw-bolder pt-3 text-center">ip address</h2>
+             <a href="#" rel="noopener">
+              <figure><img src="./assets/ipaddressen1.png" class="img-fluid" alt="foto van ip address"
+                 title="Ip address">
+                < <figcaption class="h6 small mt-2 turqoise text-center">Fig.4 ip addressen</figcaption>
+              </figure>
+            </a>
+          </article>
+          <article class="shop-item col-12 col-sm-6 col-md-4">
+            <h2 class="text-uppercase fs-6 fw-bolder pt-3 text-center">glasvezelkabel</h2>
+             <a href="#" rel="noopener">
+              <figure><img src="./assets/glasvezelkabel1.png" class="img-fluid" alt="foto van glasvezelkabel"
+                  title="glasvezelkabel">
+               <figcaption class="h6 small mt-2 turqoise text-center">Fig.5 glasvezelkabel</figcaption>
+              </figure>
+            </a>
+          </article>
+          <article class="shop-item col-12 col-sm-6 col-md-4">
+            <h2 class="text-uppercase fs-6 fw-bolder pt-3 text-center">netwerkkabel</h2>
+             <a href="#" rel="noopener">
+              <figure><img src="./assets/netwerkkabel1.png" class="img-fluid" alt="foto van netwerkkabel3"
+                  title="netwerkkabel">
+                  <figcaption class="h6 small mt-2 turqoise text-center">Fig.5 netwerkkabel</figcaption>
+              </figure>
+            </a>
+          </article>
+        </section>
+        <hr>
+      </main>
+
+      <aside class="col-md-3 border-start ps-5"">
+      <h2 class=" text-uppercase fs-4 fw-bolder pt-3">contact</h2>
+        <p>Stevens WIFI<br>
+            email : <a href="mailto:stevenswifi@ap.be" class="donkerblauw">stevenswifi@ap.be</a><br>
+            phone +32 123 / 45 67 89</p>
+           <ul class="list-inline socials">
+          <li class="list-inline-item rood">
+            <a href="https://www.youtube.com" target="_blank">
+              <i class="bi bi-youtube lichtblauw fs-3"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="bi bi-instagram lichtblauw fs-3"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="bi bi-facebook lichtblauw fs-3"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://twitter.com/" target="_blank">
+              <i class="bi bi-twitter lichtblauw fs-3"></i>
+            </a>
+          </li>
+        </ul>
+      </aside>
+<p>Fig 1. <span style="color: turquoise; font-size: larger;">A</span>ls je betonnen huizen hebt en problemen ondervindt met wifi-connectiviteit, zijn hier enkele specifieke oplossingen die kunnen helpen:
+Routerplaatsing optimaliseren: Betonnen muren kunnen wifi-signalen verzwakken, dus zorg ervoor dat je router zich op een strategische locatie bevindt. Plaats de router bij voorkeur in het midden van je huis en weg van dikke betonnen muren of obstakels.
+Wifi-extenders gebruiken: Overweeg om wifi-extenders te installeren op verschillende punten in je huis om het wifi-signaal te versterken en dode zones te elimineren. Hierdoor kan het signaal beter doordringen door de dikke betonnen muren.
+Mesh-netwerken opzetten: Een mesh-netwerk bestaat uit meerdere knooppunten die met elkaar communiceren om een naadloos wifi-netwerk te creëren. Dit kan een effectieve oplossing zijn voor betonnen huizen, omdat het de dekking verbetert zonder dat je extra extender nodig hebt.
+Powerline-adapters gebruiken: Powerline-adapters maken gebruik van de elektrische bedrading in je huis om een netwerkverbinding te creëren. Dit kan een handige oplossing zijn als wifi-signalen moeite hebben om door dikke betonnen muren te komen.
+Wifi-signalen optimaliseren: Gebruik wifi-analysetools om de signaalsterkte en interferentie in je huis te controleren. Pas de wifi-instellingen aan, zoals het kanaal en de frequentie, om storingen te verminderen en de prestaties te verbeteren.
+Door deze oplossingen te proberen, kun je de wifi-connectiviteit in je betonnen huis mogelijk verbeteren en beter omgaan met de uitdagingen die betonnen muren met zich meebrengen voor draadloze communicatie.</p>
     
-    <main class="col-md-10 main-content">
-      <header class="m-5">
-        <h1 class="col display-2 black tekst oplossingen">Oplossingen voor je wifi....</h1>
-      </header>
+<p></p>
 
-      <section id="shopintro" class="shop-section">
-        <article>
-          
-          <h2 class="fs-4 fw-bolder pt-3" style="text-transform: uppercase;">oorzaken</h2>
-          <p><span style="color: turquoise; font-size: larger;">V</span>an welke matrial(en) is uw huis gebouwt huis. Internetten zonder wifi valt nauwelijks nog voor te stellen. Een draadloos netwerk biedt veel gebruikscomfort, althans zolang het lekker loopt. Maar soms kost het je ook wel hoofdbrekens, bijvoorbeeld als je het netwerk wilt uitbreiden om een beter bereik te krijgen of als blijkt dat je wifi-signaal geregeld dienst weigert. Wij geven je een aantal oplossingen voor al je wifi-problemen.</p>
-          
-          <section style="display: flex;">
-            <figure style="margin-right: 20px;">
-              <img src="./assets/huis1.png" alt="Huis situatie1" style="width: 100%;">
-              <figcaption style="text-align: center;">Fig.1 - Huis situatie 1.</figcaption>
-            </figure>
-          
-            <figure>
-              <img src="./assets/huis2.png" alt="Huis situatie2" style="width: 100%;">
-              <figcaption style="text-align: center;">Fig.2 - Huis situatie 2.</figcaption>
-            </section>
-          </div>
-        
-          <p style="margin-bottom: 50px;"></p>
-          <h2 class="fs-4 fw-bolder pt-3" style="text-transform: uppercase;">dns - dhcp - gateway</h2>
-          <p><span style="color: turquoise; font-size: larger;">K</span>ijk eerst als je router of Access Point op DHCP staat en deze ook ip addressen uitdeelt aan je clients. Hierbij moet je automatische een IP Adres, DNS en een default gateway krijgen.</p>
-          <p><span style="color: turquoise; font-size: larger;">N</span>eem contact op met uw Internet Provider als u hier bij hulp nodig heeft.</p>
-          
-          <section style="display: flex;">
-            <figure style="margin-right: 20px;">
-              <img src="./assets/commandline1.png" alt="IPaddress1" style="width: 100%;">
-              <figcaption style="text-align: center;">Fig.1 - Command line 1.</figcaption>
-            </figure>
-                    
-            <figure>
-              <img src="./assets/modem1.png" alt="Huis situatie2" style="width: 100%;">
-              <figcaption style="text-align: center;">Fig.2 - Modem Instellingen.</figcaption>
-            </section>
-          </div>
-        
-          <p style="margin-bottom: 50px;"></p>
-          <h2 class="fs-4 fw-bolder pt-3" style="text-transform: uppercase;">Glasvezel- of netwerkkabel</h2>
-          <p><span style="color: turquoise; font-size: larger;">A</span>fhankelijk van uw snelheid van uw ISP kunt u kiezen welke kabel u gaat gebruiken. Heeft u een snelle internet abonnement dan kunt u kiezen voor de glasvezelkabel. <span style="text-decoration: underline; font-weight: bold;">Let op !!!</span> deze zijn wat prijzig.</p>
+<p>Fig 2. <span style="color: turquoise; font-size: larger;">M</span>esh-netwerken en access points zijn beide manieren om je draadloze netwerk te verbeteren, maar ze verschillen in hun aanpak. Laten we eens kijken naar wat ze precies zijn:
+1.   Access Points (APs):
+o   Access points zijn apparaten die je aan je bekabelde netwerk koppelt en die draadloze dekking bieden. Ze fungeren als toegangspunten voor apparaten om verbinding te maken met het netwerk.
+o   In jouw huidige setup heb je APs op elke verdieping van je huis geplaatst. Ze hebben allemaal hetzelfde SSID en wachtwoord, maar zenden op verschillende kanalen.
+o   Problemen die je ervaart met je huidige APs zijn onder andere:
+§  Slechte overgang tussen APs: Apparaten blijven soms vasthouden aan een AP, zelfs als een ander AP dichterbij is.
+§  Zwakke ontvangst in de tuin: Door materialen zoals dubbele beglazing kan het signaal buiten beperkt zijn.
+2.   Mesh-netwerken:
+o   Een mesh-netwerk bestaat uit meerdere apparaten (nodes) die samenwerken om een naadloos draadloos netwerk te creëren.
+o   Deze nodes communiceren met elkaar via een wired of wireless backhaul (verbinding tussen de nodes).
+o   Roaming in een mesh-netwerk is een clientbeslissing, vergelijkbaar met je huidige APs. Het hangt af van de apparaten zelf om over te schakelen naar het sterkste signaal.
+o   Sommige mesh-systemen hebben protocollen ingebouwd om apparaten te helpen beter te roamen, zoals 802.11k en 802.11v.
+o   Je kunt een extra access point buiten in de tuin plaatsen, maar dit moet wel via een ethernetkabel worden aangesloten op het mesh-netwerk.
+Conclusie:
+Mesh-netwerken kunnen handig zijn als je een naadloze dekking wilt zonder handmatig tussen APs te schakelen.
+Overweeg de TP-Link Deco M5 of een ander mesh-systeem dat aan je behoeften voldoet. Zorg ervoor dat je de nodes strategisch plaatst voor optimale dekking.
+</p>
 
-          <section style="display: flex;">
-            <figure style="margin-right: 20px;">
-              <img src="./assets/glasvezelkabel1.png" alt="Glasvezel kabel" style="width: 100%;">
-              <figcaption style="text-align: center;">Fig.1 - Glasvezel kabel.</figcaption>
-            </figure>
-          
-            <figure>
-              <img src="./assets/netwerkkabel1.png" alt="netwerkkabel" style="width: 100%;">
-              <figcaption style="text-align: center;">Fig.2 - netwerkkabel.</figcaption>
-            </section>
-           
-        
-          </div>
+<p></p>
 
-         
-        </article>
-      </section>
-    </main>
-  </section>
 
-  <!-- Footer -->
-  <footer class="container-fluid text-start h6 small p-4">&copy; 2024 Stevens WIFI</footer>
+<p>Fig 3. <span style="color: turquoise; font-size: larger;">O</span>pen de opdrachtprompt: Druk op de Windows-toets + R om het "Run" dialoogvenster te openen. Typ vervolgens "cmd" in het dialoogvenster en druk op Enter. Dit opent de opdrachtprompt.
+Typ de opdracht: Typ "ipconfig" in de opdrachtprompt en druk op Enter. Hiermee wordt een lijst met netwerkadapters en hun respectievelijke IP-adressen weergegeven.
+Bekijk je IP-adres: Zoek in de lijst naar de adapter waarmee je verbonden bent met het netwerk waarvan je het IP-adres wilt weten. Onder de desbetreffende adapter vind je het IPv4-adres, dat je eigen IP-adres is.</p>
+
+
+<p></p>
+
+
+<p>Fig 4.<span style="color: turquoise; font-size: larger;">N</span>eem contact op met uw Internet Provider als u
+  hier bij hulp nodig heeft. Hier ziet u uw ip adres</p>
+
+
+<p></p>
+
+<p>Fig 5.<span style="color: turquoise; font-size: larger;">G</span>lasvezelkabels zijn een soort transmissiekabels die data verzenden met behulp van lichtsignalen via dunne glasvezels. Ze worden vaak gebruikt voor langeafstandscommunicatie en zijn bekend om hun hoge datasnelheden en betrouwbaarheid. Hier zijn enkele kenmerken van glasvezelkabels:
+Hoge datasnelheid: Glasvezelkabels kunnen enorm hoge datasnelheden leveren, vaak veel sneller dan traditionele koperen kabels. Dit maakt ze ideaal voor toepassingen waarbij grote hoeveelheden gegevens snel moeten worden overgedragen, zoals breedbandinternet, video-streaming en telefonie.
+Betrouwbaarheid: Omdat glasvezelkabels geen elektrische signalen gebruiken maar in plaats daarvan lichtsignalen door glasvezels sturen, zijn ze minder gevoelig voor elektrische interferentie en elektromagnetische straling. Dit resulteert in een betrouwbaardere verbinding met minder kans op storingen.
+Lage latentie: Glasvezelverbindingen hebben over het algemeen een lagere latentie (vertraging) dan andere soorten verbindingen, wat belangrijk kan zijn voor toepassingen die real-time communicatie vereisen, zoals online gaming en videoconferenties.
+Veiligheid: Glasvezelkabels zijn minder vatbaar voor afluisteren en hacking omdat ze geen elektromagnetische straling uitzenden. Dit maakt ze veiliger voor het overbrengen van gevoelige gegevens.
+Of je glasvezelkabels kunt gebruiken voor thuis, hangt af van verschillende factoren, waaronder de beschikbaarheid van glasvezelinfrastructuur in jouw regio, de kosten en je specifieke behoeften aan internetconnectiviteit. In veel gebieden bieden internetproviders glasvezelverbindingen aan als een optie naast DSL- en kabelinternet. Als glasvezel beschikbaar is in jouw omgeving en je op zoek bent naar een snelle, betrouwbare internetverbinding, kan het zeker een goede keuze zijn voor thuisgebruik.
+
+
+<p></p>
+
+<p>Fig 6.<span style="color: turquoise; font-size: larger;">T</span>ypes: Er zijn verschillende types netwerkkabels, waaronder:
+Twisted Pair: Dit zijn de meest voorkomende netwerkkabels. De meest gebruikte categorieën zijn CAT5e, CAT6, CAT6a en CAT7. Ze hebben aderparen die in elkaar zijn gedraaid om elektromagnetische interferentie te verminderen.
+Coaxkabels: Hoewel ze minder gebruikelijk zijn voor thuisnetwerken, worden coaxkabels soms gebruikt voor internetverbindingen, vooral bij kabelinternet.
+Snelheid en bandbreedte: De snelheid en bandbreedte van een netwerkkabel worden bepaald door de categorie. Over het algemeen geldt: hoe hoger de categorie, hoe hoger de snelheid en bandbreedte die de kabel kan ondersteunen.
+Toepassingen: Netwerkkabels worden gebruikt voor verschillende toepassingen, waaronder:
+Internetverbindingen: Om computers, routers, switches en andere netwerkapparaten met elkaar te verbinden voor internettoegang.
+Lokale netwerken (LAN): Om apparaten binnen een lokaal netwerk met elkaar te verbinden, zoals in een huis of kantoor.
+Bedrijfsnetwerken: In grotere omgevingen worden netwerkkabels gebruikt om verschillende afdelingen en verdiepingen van een bedrijf met elkaar te verbinden.
+Installatie: Bij het installeren van netwerkkabels is het belangrijk om rekening te houden met factoren zoals kabelafstand, interferentie van andere elektrische apparaten en de kwaliteit van de kabelconnectoren.
+Betrouwbaarheid: Bekabelde netwerken zijn over het algemeen stabieler en betrouwbaarder dan draadloze netwerken. Netwerkkabels verminderen de kans op signaalinterferentie en bieden consistente prestaties.
+Toekomstbestendigheid: Bij het kiezen van een netwerkkabel is het verstandig om rekening te houden met toekomstige behoeften. Het kan lonen om te investeren in een hogere categorie kabel als je verwacht dat je in de toekomst hogere snelheden nodig hebt.
+Kortom, netwerkkabels vormen de ruggengraat van bekabelde computernetwerken en spelen een cruciale rol bij het leveren van stabiele en betrouwbare internetverbindingen.
+
+
+
+    </div>
+  </div>
+
+  <footer class="container-fluid text-start h6 small p-4"><span>&copy;</span> 2024 Stevens WIFI</footer>
 </body>
 
 </html>
