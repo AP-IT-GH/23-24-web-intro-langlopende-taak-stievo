@@ -63,7 +63,7 @@
               </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
-          <button class="btn btn-sm btn-outline-secondary" type="submit">zoeken</button>
+          <button class="btn btn-sm btn-succes" type="submit">zoeken</button>
         </form>
       </div>
     </div>
@@ -142,12 +142,19 @@
                   <option value="DE">Duitsland</option>
                   <option value="FR">Frankrijk</option>
                   <option value="LU">Luxemburg</option>
+                  <option value="LU">Belgie</option>
                   <option value="NL">Nederland</option>
                   <option value="UK">Verenigd Koninkrijk</option>
                 </select>
               </div>
             </fieldset>
-            
+            <div class="col-6">
+              <label for="role" class="form-label">Selecteer uw rol</label>
+              <select id="role" class="form-select">
+                <option value="User" selected>User</option>
+                <option value="Admin">Admin</option>
+              </select>
+            </div>
             <fieldset class="row g-3 mb-3 mt-3">
               <legend class="text-uppercase fs-6 fw-bolder pt-3">Waar liggen uw problemen</legend>
               <div class="col-6">
@@ -168,6 +175,8 @@
                   <option value="Cisco">Cisco</option>
                 </select>
               </div>
+              
+              
               <div class="col">
                 <label for="satisfied" class="form-label">hoe tevreden ben je van ons?</label>
                 <input type="range" class="form-range" min="0" max="10" step="1" id="satisfied">
@@ -183,6 +192,8 @@
       </main>
 
       <aside class="col-md-3 border-start ps-5"">
+        <a class="navbar-brand" href="#"><img src="./assets/stevenfoto.png" alt="stevenswifi" width="120" height="160">
+        </a>
         <h2 class=" text-uppercase fs-4 fw-bolder pt-3">contact</h2>
           <p>Stevens WIFI<br>
               email : <a href="mailto:stevenswifi@ap.be" class="donkerblauw">stevenswifi@ap.be</a><br>
