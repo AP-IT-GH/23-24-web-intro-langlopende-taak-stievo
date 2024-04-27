@@ -101,21 +101,40 @@ Deze servers vormen samen een gedistribueerd en redundant netwerk dat ervoor zor
 </p>
 </section>
 
-1. Hier zijn enkele van de belangrijkste DNS-servers die een grote rol spelen in het wereldwijde DNS-netwerk:
 
-2. **Root DNS-servers:** Dit zijn de hoogste DNS-servers in de hiërarchie van het DNS-systeem. Ze zijn verantwoordelijk voor het doorverwijzen van DNS-query's naar de juiste top-level domain (TLD) servers.
 
-3. **Top-level domain (TLD) servers:** Deze servers beheren de verschillende top-level domeinen, zoals .com, .org, .net, en landcodes zoals .nl, .uk, .de, enzovoort.
+<section class="container">
+    <div class="row">
+        <section class="col-md-6">
+            <dl>
+                <dt>1. Belangrijkste DNS-servers:</dt>
+                <dd>Hier zijn enkele van de belangrijkste DNS-servers die een grote rol spelen in het wereldwijde DNS-netwerk:</dd>
+                <dt>2. Root DNS-servers:</dt>
+                <dd>Dit zijn de hoogste DNS-servers in de hiërarchie van het DNS-systeem. Ze zijn verantwoordelijk voor het doorverwijzen van DNS-query's naar de juiste top-level domain (TLD) servers.</dd>
+                <dt>3. Top-level domain (TLD) servers:</dt>
+                <dd>Deze servers beheren de verschillende top-level domeinen, zoals .com, .org, .net, en landcodes zoals .nl, .uk, .de, enzovoort.</dd>
+                <dt>4. Authoritative DNS-servers:</dt>
+                <dd>Dit zijn de DNS-servers die verantwoordelijk zijn voor het bijhouden van de DNS-records voor een specifiek domein. Ze worden beheerd door domeinregistrars, internet service providers (ISP's) en organisaties die hun eigen domeinen beheren.</dd>
+            </dl>
+        </section>
+        <section class="col-md-6">
+            <dl>
+                <dt>5. Recursive DNS-servers:</dt>
+                <dd>Deze servers worden gebruikt door eindgebruikers, zoals internet service providers (ISP's) en openbare DNS-providers zoals Google DNS en OpenDNS. Ze voeren DNS-query's uit namens de eindgebruiker door de DNS-hiërarchie te doorlopen en de juiste IP-adressen op te halen.</dd>
+                <dt>6. Caching DNS-servers:</dt>
+                <dd>Deze servers slaan DNS-records tijdelijk op om toekomstige DNS-query's sneller af te handelen. Ze verminderen de belasting van het DNS-netwerk en verbeteren de algehele prestaties van internetverbindingen.</dd>
+                <dt>7. DNS-resolvers:</dt>
+                <dd>Dit zijn softwarecomponenten die DNS-query's afhandelen en doorsturen naar de juiste DNS-servers. Ze kunnen worden geïmplementeerd als onderdeel van besturingssystemen, netwerkapparaten, DNS-servers of DNS-proxies.</dd>
+                <dt>8. Gedistribueerd en redundant netwerk:</dt>
+                <dd>Deze servers vormen samen een gedistribueerd en redundant netwerk dat ervoor zorgt dat DNS-query's snel en betrouwbaar worden afgehandeld over de hele wereld.</dd>
+            </dl>
+        </section>
+    </div>
+  </section>
+  
 
-4. **Authoritative DNS-servers:** Dit zijn de DNS-servers die verantwoordelijk zijn voor het bijhouden van de DNS-records voor een specifiek domein. Ze worden beheerd door domeinregistrars, internet service providers (ISP's) en organisaties die hun eigen domeinen beheren.
 
-5. **Recursive DNS-servers:** Deze servers worden gebruikt door eindgebruikers, zoals internet service providers (ISP's) en openbare DNS-providers zoals Google DNS en OpenDNS. Ze voeren DNS-query's uit namens de eindgebruiker door de DNS-hiërarchie te doorlopen en de juiste IP-adressen op te halen.
 
-6. **Caching DNS-servers:** Deze servers slaan DNS-records tijdelijk op om toekomstige DNS-query's sneller af te handelen. Ze verminderen de belasting van het DNS-netwerk en verbeteren de algehele prestaties van internetverbindingen.
-
-7. **DNS-resolvers:** Dit zijn softwarecomponenten die DNS-query's afhandelen en doorsturen naar de juiste DNS-servers. Ze kunnen worden geïmplementeerd als onderdeel van besturingssystemen, netwerkapparaten, DNS-servers of DNS-proxies.
-
-8. Deze servers vormen samen een gedistribueerd en redundant netwerk dat ervoor zorgt dat DNS-query's snel en betrouwbaar worden afgehandeld over de hele wereld.
 
 
     </div>

@@ -30,7 +30,7 @@ a, a:hover {
 }
 
 .turqoise {
-  color: #14E0C0;
+  color: #14E0C0 !important;;
 }
 
 .rood, span {
