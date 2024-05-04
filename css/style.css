@@ -38,7 +38,7 @@ a, a:hover {
 }
 
 .rood a {
-  color: #0801E0; /* Donkerblauw */
+  color: #0801E0; /
 }
 
 .underline {
@@ -53,3 +53,23 @@ a, a:hover {
 .hoverable:hover {
   /* Your hover styles */
 }
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #00b7ff;
+    border: none; 
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); 
+}
+
+
+.carousel-item img {
+  height: 300px; 
+}
+
+
