@@ -57,7 +57,7 @@ a, a:hover {
 
 .carousel-control-prev,
 .carousel-control-next {
-    background-color: #00b7ff;
+    background-color: #FFFFFF;
     border: none; 
 }
 
@@ -80,4 +80,7 @@ a, a:hover {
   margin-bottom: 20px; 
 }
 
-
+/* CSS */
+.2cm {
+  margin-top: 3cm; /* Hier kun je de gewenste afstand opgeven */
+}
