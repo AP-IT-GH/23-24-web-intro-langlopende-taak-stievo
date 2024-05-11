@@ -50,9 +50,7 @@ a, a:hover {
   padding: 20px;
 }
 
-.hoverable:hover {
-  /* Your hover styles */
-}
+
 
 
 .carousel-control-prev,
@@ -80,7 +78,4 @@ a, a:hover {
   margin-bottom: 20px; 
 }
 
-/* CSS */
-.2cm {
-  margin-top: 3cm; /* Hier kun je de gewenste afstand opgeven */
-}
+
